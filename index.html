@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Budget application for a given month" />
+    <!-- Imported files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local files -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Budget Application</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">
+        Available budget in
+        <span class="header-title--date">12 June, 2022</span>
+      </h1>
+      <div class="totals">0.00</div>
+      <div class="income-total">
+        <div class="income-total-flag">Income</div>
+        <div class="income-total-value">+ 0.00</div>
+      </div>
+      <div class="expense-total">
+        <div class="expense-total-flag">Expenses</div>
+        <div class="expense-total-value">- 0.00</div>
+      </div>
+    </header>
+    <form class="budget-form">
+      <div class="form-control income">
+        <select id="type" class="budget-type">
+          <option value="inc">+</option>
+          <option value="exp">-</option>
+        </select>
+        <input
+          type="text"
+          class="budget-description"
+          placeholder="Add description"
+          required
+        />
+        <input type="number" class="budget-value" placeholder="Value" />
+        <button class="btn budget-btn" type="submit">
+          <i class="fas fa-check"></i>
+        </button>
+      </div>
+    </form>
+    <section class="results">
+      <div class="income-results">
+        <h2 class="title income-title">Income</h2>
+        <ul class="income-list">
+          <!-- <li class="income-item">
+            <p class="income-tag">project</p>
+            <p class="income-value">5683</p>
+            <button class="btn income-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="expense-results">
+        <h2 class="title expense-title">Expenses</h2>
+        <ul class="expense-list">
+          <!-- <li class="expense-item">
+            <p class="expense-tag">project</p>
+            <p class="expense-value">5683</p>
+            <button class="btn expense-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
