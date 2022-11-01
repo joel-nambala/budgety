@@ -259,5 +259,5 @@ body {
 .hide {
   visibility: hidden;
   pointer-events: none;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
